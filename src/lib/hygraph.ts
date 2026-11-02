@@ -1,27 +1,28 @@
 import { Profile } from "../types/profile"
 
 const PROFILE_QUERY = `
-query GetProfile {
+  query GetProfile {
     profiles(first: 1) {
-        username
-        avatarLight {
-            url
-        }
-        avatarDark {
-            url
-        }
-        links{
-            id
-            title
-            url
-        }
-        socials {
-            id
-            platform
-            url
-        }
+      username
+      avatarLight {
+        url
+      }
+      avatarDark {
+        url
+      }
+      links {
+        id
+        title
+        url
+      }
+      socials {
+        id
+        platform
+        url
+      }
     }
-}`
+  }
+`
 
 type HygraphResponse = {
     data?: { profiles: Profile[] }

@@ -16,10 +16,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt_BR" suppressHydrationWarning>
-      <body className={`${inter.variable} bg-background font-sans text-foreground antialiased`}><ThemeProvider>
-        {children}
-      </ThemeProvider>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${inter.variable} bg-background font-sans text-foreground antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

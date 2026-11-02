@@ -4,11 +4,11 @@ export type ProfileLink = {
     url: string
 }
 
-export type SocialPlatiform = 'GITHUB' | 'YOUTUBE' | 'INSTAGRAM' | 'LINKEDIN'
+export type SocialPlatform = 'GITHUB' | 'YOUTUBE' | 'INSTAGRAM' | 'LINKEDIN'
 
 export type SocialLink = {
     id: string,
-    platform: SocialPlatiform,
+    platform: SocialPlatform,
     url: string
 }
 

@@ -1,22 +1,29 @@
 @import "tailwindcss";
 
 
-@custom-variatn dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
+  --background-image: url('/bg-desktop-light.png');
   --foreground: #18181b;
-  --surface: #f4f4f5;
-  --surface-hover: #e4e4e7;
-  --border: #d4d4d8;
+  --surface: #rgb(0 0 0 / 0.05);
+  --surface-hover: #rgb(0 0 0 / 0.1);
+  --border: #rgb(0 0 0 / 0.5);
 }
 
 .dark {
-  --background: #09090b;
+  --background-image: url('/bg-desktop.png');
   --foreground: #fafafa;
-  --surface: #18181b;
-  --surface-hover: #27272a;
-  --border: #3f3f46;
+  --surface: #rgb(225 225 225 / 0.05);
+  --surface-hover: #rgb(225 225 225 / 0.1);
+  --border: #rgb(225 225 225 / 0.5);
+}
+
+body {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @theme inline {
