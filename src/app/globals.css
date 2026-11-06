@@ -6,17 +6,17 @@
 :root {
   --background-image: url('/bg-desktop-light.png');
   --foreground: #18181b;
-  --surface: #rgb(0 0 0 / 0.05);
-  --surface-hover: #rgb(0 0 0 / 0.1);
-  --border: #rgb(0 0 0 / 0.5);
+  --surface: rgb(0 0 0 / 0.05);
+  --surface-hover: rgb(0 0 0 / 0.1);
+  --border: rgb(0 0 0 / 0.5);
 }
 
 .dark {
   --background-image: url('/bg-desktop.png');
   --foreground: #fafafa;
-  --surface: #rgb(225 225 225 / 0.05);
-  --surface-hover: #rgb(225 225 225 / 0.1);
-  --border: #rgb(225 225 225 / 0.5);
+  --surface: rgb(225 225 225 / 0.05);
+  --surface-hover: rgb(225 225 225 / 0.1);
+  --border: rgb(225 225 225 / 0.5);
 }
 
 body {
